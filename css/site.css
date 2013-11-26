@@ -45,7 +45,7 @@ header {
   width: 72px;
   height: 60px;
   margin: auto;
-  margin-top: 25%;
+  margin-top: 22%;
   overflow: hidden;
   text-align: center;
   padding-top: 80px;
@@ -129,3 +129,8 @@ footer {
   background: url(../img/sound-off.jpg) no-repeat;
   background-size: 100%;
   transition: 0.2s; }
+
+.flake {
+  background: url(../img/snow.png) top center no-repeat;
+  background-size: 100%;
+  display: block; }

@@ -13,25 +13,27 @@
  * @params newOn - frequency in ms of appearing of new snowflake, 500 by default
  * @example $.fn.snow({ maxSize: 200, newOn: 1000 });
  */
+
+ // karakter: &#10052;
+
 (function($){
 	
 	$.fn.snow = function(options){
 	
-			var $flake 			= $('<div id="flake" />').css({'position': 'absolute', 'top': '-50px'}).html('&#10052;'),
+			var $flake 			= $('<div class="flake" />').css({'position': 'absolute', 'top': '-50px'}).html(' '),
 				documentHeight 	= $(document).height(),
 				documentWidth	= $(document).width(),
 				defaults		= {
-									minSize		: 10,
-									maxSize		: 20,
-									newOn		: 500,
-									flakeColor	: "#FFFFFF"
+									minSize		: 5,
+									maxSize		: 30,
+									newOn		: 250,
 								},
 				options			= $.extend({}, defaults, options);
 				
 			
 			var interval		= setInterval( function(){
 				var startPositionLeft 	= Math.random() * documentWidth - 100,
-				 	startOpacity		= 0.5 + Math.random(),
+				 	startOpacity		= 0.3 + Math.random(),
 					sizeFlake			= options.minSize + Math.random() * options.maxSize,
 					endPositionTop		= documentHeight - 40,
 					endPositionLeft		= startPositionLeft - 100 + Math.random() * 200,
@@ -43,8 +45,8 @@
 						{
 							left: startPositionLeft,
 							opacity: startOpacity,
-							'font-size': sizeFlake,
-							color: options.flakeColor
+							'width': sizeFlake,
+							'height': sizeFlake,
 						}
 					)
 					.animate(

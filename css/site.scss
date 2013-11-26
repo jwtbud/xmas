@@ -6,6 +6,8 @@
 	$bg-url: url(../img/bg.jpg);
 	$logo-url: url(../img/logo.jpg);
 	$loading-layer-url: url(../img/loading-layer.png);
+	$sound-on-url: url(../img/sound-on.jpg);
+	$sound-off-url: url(../img/sound-off.jpg);
 
 // CONTAINER
 
@@ -115,7 +117,7 @@
 	width: 72px;
 	height: 60px;
 	margin: auto;
-	margin-top: 25%;
+	margin-top: 22%;
 	overflow: hidden;
 	text-align: center;
 	padding-top: 80px;
@@ -202,7 +204,7 @@
 	}
 
 		.play {
-			background: url(../img/sound-on.jpg) no-repeat;
+			background: $sound-on-url no-repeat;
 			background-size: 100%;
 			transition: 0.2s;
 			cursor: pointer;
@@ -212,10 +214,17 @@
 			transition: 0.4s;
 		}
 		.play.off {
-			background: url(../img/sound-off.jpg) no-repeat;
+			background: $sound-off-url no-repeat;
 			background-size: 100%;
 			transition: 0.2s;
 		}
+	}
+
+	.flake {
+		background: url(../img/snow.png) top center no-repeat;
+		background-size: 100%;
+		display: block;
+
 	}
 
 	
