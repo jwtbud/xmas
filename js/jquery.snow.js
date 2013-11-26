@@ -26,7 +26,7 @@
 				defaults		= {
 									minSize		: 5,
 									maxSize		: 30,
-									newOn		: 250,
+									newOn		: 100,
 								},
 				options			= $.extend({}, defaults, options);
 				

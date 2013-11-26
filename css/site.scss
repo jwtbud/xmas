@@ -80,10 +80,11 @@
 	}
 
 	header {
-		background: $bg-url no-repeat top center;
+		// background: $bg-url no-repeat top center;
+		background: #221c38;
 		background-size: 100%;
 		width: 100%;
-		height: 52.3vw;
+		height: 54.3vw;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -226,5 +227,40 @@
 		display: block;
 
 	}
+
+	// PARALLAX
+		.scene {
+		width: 100%;
+		height: 52.3vw;
+		margin: 0 auto;
+		position: absolute;
+		li img {
+			height: 100%;
+			width: auto;
+		}
+		li#stars.layer img, li#smoke.layer img, li#house.layer img, li#sky.layer img  {
+			height: auto;
+			width: 100%;
+		}
+		li#house.layer img, li#sky.layer img, li#smoke.layer img  {
+			width: 105% !important;
+			margin-left: -2.3vw;
+		}
+		}
+
+		li#moon.layer {
+		max-height: 11vw;
+		max-width: 100px;
+		margin-top: 6vw;
+		margin-left: 35vw;
+		}
+		li#snow1.layer {
+
+		}
+		li#smoke.layer {
+		margin-top: 8.5vw;
+		margin-left: 1vw;
+		}
+
 
 	
