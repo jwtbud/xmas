@@ -3,13 +3,12 @@
 // BASE
 
 // IMG
-	$img-url: url(../img/sprite.png);
-	$icons-url: url(../img/icons.png);
-	$screen-url: url(../img/tvscreen.jpg);
+	$bg-url: url(../img/bg.jpg);
+	$logo-url: url(../img/logo.jpg);
 
 // CONTAINER
 
-	$container-width: 762px;
+	$container-width: 990px;
 	$container-height: 340px;
 
 
@@ -24,6 +23,7 @@
 
 	.font-normal {
 		font-size: 11px;
+		font-family: 'font-regular';
 	}
 
 	.font-bigger {
@@ -66,7 +66,6 @@
 // SASS END
 
 
-
 // LET'S GO!
 
 // LAYOUT
@@ -75,7 +74,78 @@
 		@extend .font-normal;
 		-webkit-font-smoothing:antialiased;
 		padding-bottom: 50px;
-		background: red !important;
-		padding: 0px;
-		font-family: arial
 	}
+
+	header {
+		background: $bg-url no-repeat top center fixed;
+		background-size: 100%;
+		width: 100%;
+		height: 52.7vw;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		overflow: hidden;
+
+
+		.container {
+		max-width: $container-width;
+		width: 100%;
+		position: relative;
+		margin: auto;
+		clear: both;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-top: 4%;
+
+		}
+	}
+
+	
+
+	h1, h2 {
+		float: left;
+		text-align: right;
+		display: block;
+		color: #fff;
+		width: 95%;
+
+
+	}
+	h2 {
+		font-size: 2.3vw;
+		transition: 0.3s;
+		font-family: 'font-light';
+	}
+	h1 {
+		font-size: 2.8vw;
+		transition: 0.3s;
+		padding-top: 0.9vw;
+		font-family: 'font-regular';
+	}
+
+	footer {
+		width: 100%;
+		position: relative;
+
+		.container {
+			width: 100% !important;
+			max-width: 800px;
+			position: relative;
+			margin: auto;
+			clear: both;
+			a {
+			background: $logo-url no-repeat right top;
+			background-size: 100% auto;
+			max-height: 120px;
+			width: 25vw;
+			max-width: 180px;
+			height: 10vw;
+			display:block;
+			float: right; 
+			margin-top: 10px;
+			}
+		}
+	}
+
+	
