@@ -73,7 +73,6 @@
 	body {
 		@extend .font-normal;
 		-webkit-font-smoothing:antialiased;
-		padding-bottom: 50px;
 	}
 
 	header {
@@ -85,7 +84,7 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		overflow: hidden;
-
+		position: relative;
 
 		.container {
 		max-width: $container-width;
@@ -109,6 +108,7 @@
 		display: block;
 		color: #fff;
 		width: 95%;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.2)
 
 
 	}
@@ -127,6 +127,8 @@
 	footer {
 		width: 100%;
 		position: relative;
+		overflow: hidden;
+		max-height: 90px;
 
 		.container {
 			width: 100% !important;
@@ -145,6 +147,36 @@
 			float: right; 
 			margin-top: 10px;
 			}
+		}
+	}
+
+	.sound {
+		a {
+		position: absolute;
+		height: 5vw;
+		width: 5vw;
+		max-height: 50px; max-width: 50px;
+		display: block;
+		margin-top: 1%;
+		margin-left: 10%;
+		background-size: 100%;
+		margin-top: 13px;
+	}
+
+		.play {
+			background: url(../img/sound-on.jpg) no-repeat;
+			background-size: 100%;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+		.play:hover {
+			opacity: 0.7;
+			transition: 0.4s;
+		}
+		.play.off {
+			background: url(../img/sound-off.jpg) no-repeat;
+			background-size: 100%;
+			transition: 0.2s;
 		}
 	}
 

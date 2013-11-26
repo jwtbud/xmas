@@ -7,8 +7,7 @@
   font-size: 15px; }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  padding-bottom: 50px; }
+  -webkit-font-smoothing: antialiased; }
 
 header {
   background: url(../img/bg.jpg) no-repeat top center fixed;
@@ -18,7 +17,8 @@ header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   header .container {
     max-width: 990px;
     width: 100%;
@@ -35,7 +35,8 @@ h1, h2 {
   text-align: right;
   display: block;
   color: #fff;
-  width: 95%; }
+  width: 95%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
 h2 {
   font-size: 2.3vw;
@@ -50,7 +51,9 @@ h1 {
 
 footer {
   width: 100%;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  max-height: 90px; }
   footer .container {
     width: 100% !important;
     max-width: 800px;
@@ -67,3 +70,27 @@ footer {
       display: block;
       float: right;
       margin-top: 10px; }
+
+.sound a {
+  position: absolute;
+  height: 5vw;
+  width: 5vw;
+  max-height: 50px;
+  max-width: 50px;
+  display: block;
+  margin-top: 1%;
+  margin-left: 10%;
+  background-size: 100%;
+  margin-top: 13px; }
+.sound .play {
+  background: url(../img/sound-on.jpg) no-repeat;
+  background-size: 100%;
+  transition: 0.2s;
+  cursor: pointer; }
+.sound .play:hover {
+  opacity: 0.7;
+  transition: 0.4s; }
+.sound .play.off {
+  background: url(../img/sound-off.jpg) no-repeat;
+  background-size: 100%;
+  transition: 0.2s; }
