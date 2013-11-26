@@ -1,0 +1,13 @@
+@import url(reset.css);
+.font-normal, body {
+  font-size: 11px; }
+
+.font-bigger {
+  font-size: 15px; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 50px;
+  background: red !important;
+  padding: 0px;
+  font-family: arial; }

@@ -1,0 +1,81 @@
+@import url(reset.css);
+
+// BASE
+
+// IMG
+	$img-url: url(../img/sprite.png);
+	$icons-url: url(../img/icons.png);
+	$screen-url: url(../img/tvscreen.jpg);
+
+// CONTAINER
+
+	$container-width: 762px;
+	$container-height: 340px;
+
+
+// FONTS
+
+	$font-normal: 'arial', sans-serif;
+	$content-font-size: 12px;
+
+	$font-bold: 'arial' ;
+
+	$font-headline: 'arial';
+
+	.font-normal {
+		font-size: 11px;
+	}
+
+	.font-bigger {
+		font-size: 15px
+	}
+
+// POSITIONS
+
+	$number-bottom: 5px;
+
+
+// COLORS
+
+	$link-color: #333;
+	$link-hover-color: #555;
+
+
+// BROWSERS BASE
+
+	@mixin transition($radius) {
+  -webkit-transition: $radius;
+     -moz-transition: $radius;
+      -ms-transition: $radius;
+       -o-transition: $radius;
+          transition: $radius;
+     }
+
+     @mixin border-radius($border-radius) {
+  -webkit-border-radius: $border-radius;
+     -moz-border-radius: $border-radius;
+      -ms-border-radius: $border-radius;
+       -o-border-radius: $border-radius;
+          border-radius: $border-radius;
+     }
+
+	@mixin opacity($opacity) {
+	opacity: $opacity;
+     }
+
+// SASS END
+
+
+
+// LET'S GO!
+
+// LAYOUT
+
+	body {
+		@extend .font-normal;
+		-webkit-font-smoothing:antialiased;
+		padding-bottom: 50px;
+		background: red !important;
+		padding: 0px;
+		font-family: arial
+	}
