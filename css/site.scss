@@ -4,10 +4,15 @@
 
 // IMG
 	$bg-url: url(../img/bg.jpg);
+	$bg-full-url: url(../img/bg-full.jpg);
 	$logo-url: url(../img/logo.jpg);
 	$loading-layer-url: url(../img/loading-layer.png);
 	$sound-on-url: url(../img/sound-on.jpg);
 	$sound-off-url: url(../img/sound-off.jpg);
+	$scarf-img-url: url(../img/scarf.png);
+	$footrpint1-img-url: url(../img/footprint1.png);
+	$footrpint2-img-url: url(../img/footprint2.png);
+	$footrpint3-img-url: url(../img/footprint3.png);
 
 // CONTAINER
 
@@ -79,6 +84,17 @@
 		overflow-x: hidden;
 	}
 
+	.ie header, .opera header {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.img/bg2.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg2.jpg', sizingMethod='scale')";
+		min-height: 600px;
+		background: $bg-full-url;
+	}
+
 	header {
 		background: $bg-url no-repeat top center #221c38;
 		background-size: 100%;
@@ -138,10 +154,7 @@
 		position: absolute;
 		top: 0;
 
-}
-
-
-	
+}	
 
 	h1, h2 {
 		float: left;
@@ -153,8 +166,16 @@
 		// margin-top: 400px;//	
 
 	}
+
+	.ie h2, .opera h2 {
+		font-size: 18px;
+	}
+	.ie h1, .opera h1 {
+		font-size: 25px;
+	}
+
 	h2 {
-		font-size: 2.3vw;
+		font-size: 2.3vw; 
 		transition: 0.3s;
 		font-family: 'font-light';
 	}
@@ -164,6 +185,53 @@
 		padding-top: 0.9vw;
 		font-family: 'font-regular';
 	}
+
+	.scarf {
+		position: absolute;
+		display: block;
+		height: 13vw;
+		width: 10vw;
+		top: 25.3vw;
+		left: 26.5vw;
+		background: $scarf-img-url no-repeat;
+		background-size: 100%;
+		opacity: 0;
+	}
+
+	.footprint1 {
+		position: absolute;
+		display: block;
+		height: 5vw;
+		width: 3.5vw;
+		bottom: 0vw;
+		right: 32.5vw;
+		background: $footrpint1-img-url no-repeat;
+		background-size: 100%;
+		opacity: 1;
+	}
+	.footprint2 {
+		position: absolute;
+		display: block;
+		height: 7vw;
+		width: 23vw;
+		bottom: 0.2vw;
+		right: 38.2vw;
+		background: $footrpint2-img-url no-repeat;
+		background-size: 100%;
+		opacity: 1;
+	}
+	.footprint3 {
+		position: absolute;
+		display: block;
+		height: 13vw;
+		width: 30vw;
+		bottom: 11vw;
+		left: 9.1vw;
+		background: $footrpint3-img-url no-repeat;
+		background-size: 100%;
+		opacity: 1;
+	}
+
 
 	footer {
 		width: 100%;

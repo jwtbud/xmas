@@ -10,6 +10,16 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden; }
 
+.ie header, .opera header {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.img/bg2.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg2.jpg', sizingMethod='scale')";
+  min-height: 600px;
+  background: url(../img/bg-full.jpg); }
+
 header {
   background: url(../img/bg.jpg) no-repeat top center #221c38;
   background-size: 100%;
@@ -73,6 +83,12 @@ h1, h2 {
   width: 95%;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
+.ie h2, .opera h2 {
+  font-size: 18px; }
+
+.ie h1, .opera h1 {
+  font-size: 25px; }
+
 h2 {
   font-size: 2.3vw;
   transition: 0.3s;
@@ -83,6 +99,50 @@ h1 {
   transition: 0.3s;
   padding-top: 0.9vw;
   font-family: 'font-regular'; }
+
+.scarf {
+  position: absolute;
+  display: block;
+  height: 13vw;
+  width: 10vw;
+  top: 25.3vw;
+  left: 26.5vw;
+  background: url(../img/scarf.png) no-repeat;
+  background-size: 100%;
+  opacity: 0; }
+
+.footprint1 {
+  position: absolute;
+  display: block;
+  height: 5vw;
+  width: 3.5vw;
+  bottom: 0vw;
+  right: 32.5vw;
+  background: url(../img/footprint1.png) no-repeat;
+  background-size: 100%;
+  opacity: 1; }
+
+.footprint2 {
+  position: absolute;
+  display: block;
+  height: 7vw;
+  width: 23vw;
+  bottom: 0.2vw;
+  right: 38.2vw;
+  background: url(../img/footprint2.png) no-repeat;
+  background-size: 100%;
+  opacity: 1; }
+
+.footprint3 {
+  position: absolute;
+  display: block;
+  height: 13vw;
+  width: 30vw;
+  bottom: 11vw;
+  left: 9.1vw;
+  background: url(../img/footprint3.png) no-repeat;
+  background-size: 100%;
+  opacity: 1; }
 
 footer {
   width: 100%;
