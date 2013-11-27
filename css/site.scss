@@ -6,7 +6,7 @@
 	$bg-url: url(../img/bg.jpg);
 	$bg-full-url: url(../img/bg-full.jpg);
 	$logo-url: url(../img/logo.jpg);
-	$loading-layer-url: url(../img/loading-layer.png);
+	$loading-layer-url: url(../img/preload.jpg);
 	$sound-on-url: url(../img/sound-on.jpg);
 	$sound-off-url: url(../img/sound-off.jpg);
 	$scarf-img-url: url(../img/scarf.png);
@@ -92,7 +92,7 @@
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.img/bg2.jpg', sizingMethod='scale');
 		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg2.jpg', sizingMethod='scale')";
 		min-height: 600px;
-		background: $bg-full-url;
+		background: $bg-full-url
 	}
 
 	header {
@@ -122,6 +122,7 @@
 	.loading {
 		background: $loading-layer-url;
 		position: absolute;
+		background-size: 100%;
 		top: 0px;
 		left: 0px;
 		width: 100%;
@@ -161,7 +162,7 @@
 		text-align: right;
 		display: block;
 		color: #fff;
-		width: 95%;
+		width: 97%;
 		text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 		// margin-top: 400px;//	
 
@@ -232,12 +233,21 @@
 		opacity: 1;
 	}
 
+@media only all and (min-height: 900px) {
+	footer {
+	position: relative !important;
+	}
+}
 
 	footer {
 		width: 100%;
-		position: relative;
+		position: fixed;
+		bottom: 0;
 		overflow: hidden;
 		max-height: 90px;
+		background: #fff;
+		z-index: 10;
+
 
 		.container {
 			width: 100% !important;
@@ -331,8 +341,8 @@
 		}
 
 		li#moon.layer {
-		max-height: 11vw;
-		max-width: 100px;
+		max-height: 12vw;
+		max-width: 115px;
 		margin-top: 5vw;
 		margin-left: 35vw;
 		}

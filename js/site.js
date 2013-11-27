@@ -37,9 +37,13 @@ $(document).ready(function(){
 $(window).load(function() {
 $(".loading").delay(750).fadeOut(1000);
 $.fn.snow();
-$('h1').css({opacity:0, marginTop: 80,}).delay(1650).animate({marginTop: 0, opacity:1}, 3000,'easeOutQiunt');
+// $('h1').css({opacity:0, marginTop: 80,}).delay(1650).animate({marginTop: 0, opacity:1}, 3000,'easeOutQiunt');
+// $('h2').css({marginTop: -400,opacity:0}).delay(1550).animate({marginTop:30,opacity:1}, 7600,'easeOutElastic
 
-$('h2').css({marginTop: -400,opacity:0}).delay(1550).animate({marginTop:30,opacity:1}, 7600,'easeOutElastic');
+
+$('h2').css({opacity:0, marginTop: 60}).delay(1550).animate({opacity:1, marginTop: 30}, 3000,' easeInCirc');
+$('h1').css({opacity:0, marginTop: 30,}).delay(4200).animate({opacity:1, marginTop: 0}, 3000,' easeInCirc');
+
 
 });
 

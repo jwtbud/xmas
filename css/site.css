@@ -42,8 +42,9 @@ header {
     padding-top: 4%; }
 
 .loading {
-  background: url(../img/loading-layer.png);
+  background: url(../img/preload.jpg);
   position: absolute;
+  background-size: 100%;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -80,7 +81,7 @@ h1, h2 {
   text-align: right;
   display: block;
   color: #fff;
-  width: 95%;
+  width: 97%;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
 .ie h2, .opera h2 {
@@ -144,11 +145,17 @@ h1 {
   background-size: 100%;
   opacity: 1; }
 
+@media only all and (min-height: 900px) {
+  footer {
+    position: relative !important; } }
 footer {
   width: 100%;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   overflow: hidden;
-  max-height: 90px; }
+  max-height: 90px;
+  background: #fff;
+  z-index: 10; }
   footer .container {
     width: 100% !important;
     max-width: 800px;
@@ -221,8 +228,8 @@ div#house img {
     margin-left: -2.3vw; }
 
 li#moon.layer {
-  max-height: 11vw;
-  max-width: 100px;
+  max-height: 12vw;
+  max-width: 115px;
   margin-top: 5vw;
   margin-left: 35vw; }
 

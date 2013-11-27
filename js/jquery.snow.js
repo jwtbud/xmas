@@ -40,7 +40,7 @@
 					durationFall		= documentHeight * 10 + Math.random() * 5000;
 				$flake
 					.clone()
-					.appendTo('body')
+					.appendTo('header')
 					.css(
 						{
 							left: startPositionLeft,
