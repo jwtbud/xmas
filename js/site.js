@@ -1,7 +1,7 @@
 $(window).load(function() {
 
 
-var isPlaying = function(audio) {return !audio.paused;}
+window.onload = function(audio) {return !audio.paused;}
 			    var a = document.getElementById('main_audio');
 			    if(!(a.play instanceof Function)){
 			        a = document.getElementById('main_audio_ie8');
@@ -41,8 +41,9 @@ $.fn.snow();
 // $('h2').css({marginTop: -400,opacity:0}).delay(1550).animate({marginTop:30,opacity:1}, 7600,'easeOutElastic
 
 
-$('h2').css({opacity:0, marginTop: 60}).delay(1550).animate({opacity:1, marginTop: 30}, 3000,' easeInCirc');
-$('h1').css({opacity:0, marginTop: 30,}).delay(4200).animate({opacity:1, marginTop: 0}, 3000,' easeInCirc');
+$('h2').css({opacity:0, marginTop: 60}).delay(9150).animate({opacity:1, marginTop: 30}, 2500,' easeInCirc');
+$('h1').css({opacity:0, marginTop: 30,}).delay(13250).animate({opacity:1, marginTop: 10}, 2500,' easeInCirc');
+$('.flakes').css({opacity:0}).delay(11000).animate({opacity:1}, 14500, 'easeInCirc');
 
 
 });
