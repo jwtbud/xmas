@@ -11,14 +11,101 @@ body {
   overflow-x: hidden; }
 
 .ie header, .opera header {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.img/bg2.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg2.jpg', sizingMethod='scale')";
-  min-height: 600px;
-  background: url(../img/bg-full.jpg); }
+  width: 1000px !important;
+  height: 533px !important;
+  min-height: 533px !important;
+  margin: auto !important;
+  background: url(../img/bg-ie.jpg) no-repeat !important;
+  background-size: 100% !important; }
+.ie .scene, .opera .scene {
+  overflow: hidden;
+  display: none !important; }
+.ie .loading, .opera .loading {
+  height: 533px !important;
+  background: url(../img/preload-ie.jpg) top center no-repeat !important;
+  width: 1000px !important; }
+.ie .container, .opera .container {
+  width: 1000px !important; }
+.ie h1, .opera h1 {
+  font-size: 30px !important;
+  width: 93% !important; }
+.ie h2, .opera h2 {
+  font-size: 22px !important;
+  margin-top: 20px !important;
+  width: 93% !important; }
+.ie footer, .opera footer {
+  position: relative !important; }
+.ie .sound, .opera .sound {
+  margin-left: 10% !important; }
+.ie .footprint1, .opera .footprint1 {
+  position: absolute;
+  display: block;
+  height: 60px !important;
+  width: 40px !important;
+  bottom: -30px !important;
+  right: 325px !important;
+  background: url(../img/footprint1.png) no-repeat;
+  background-size: 100%;
+  opacity: 1; }
+.ie .footprint2, .opera .footprint2 {
+  position: absolute;
+  display: block;
+  height: 100px !important;
+  width: 220px !important;
+  bottom: -25px !important;
+  left: 390px !important;
+  background: url(../img/footprint2.png) no-repeat;
+  background-size: 100%;
+  opacity: 1; }
+.ie .steps, .opera .steps {
+  position: absolute;
+  display: block;
+  height: 200px !important;
+  width: 370px !important;
+  bottom: 110px !important;
+  left: 50px !important;
+  background-size: 100%;
+  opacity: 1; }
+.ie .step1, .opera .step1 {
+  height: 30px !important;
+  width: 70px !important;
+  bottom: 10px !important;
+  right: 98px !important; }
+.ie .step2, .opera .step2 {
+  height: 40px !important;
+  width: 50px !important;
+  bottom: 0px !important;
+  right: 175px !important; }
+.ie .step3, .opera .step3 {
+  height: 40px !important;
+  width: 80px !important;
+  bottom: 5px !important;
+  left: 100px !important; }
+.ie .step4, .opera .step4 {
+  height: 40px !important;
+  width: 47px !important;
+  top: 100px !important;
+  left: 68px !important; }
+.ie .step5, .opera .step5 {
+  height: 70px !important;
+  width: 40px !important;
+  top: 57px !important;
+  left: 94px !important; }
+.ie .step6, .opera .step6 {
+  height: 30px !important;
+  width: 50px !important;
+  top: 62px !important;
+  left: 130px !important; }
+.ie .step7, .opera .step7 {
+  height: 30px !important;
+  width: 50px !important;
+  top: 70px !important;
+  left: 170px !important; }
+.ie .scarf, .opera .scarf {
+  height: 100px !important;
+  width: 100px !important;
+  top: 252px !important;
+  left: 265px !important; }
 
 header {
   background: url(../img/bg.jpg) no-repeat top center #221c38;
@@ -82,7 +169,8 @@ h1, h2 {
   display: block;
   color: #fff;
   width: 97%;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  z-index: 10; }
 
 .ie h2, .opera h2 {
   font-size: 18px; }
@@ -232,6 +320,9 @@ h1 {
 @media only all and (min-height: 900px) {
   footer {
     position: relative !important; } }
+@media only all and (min-width: 1500px) and (min-height: 900px) {
+  footer {
+    position: fixed !important; } }
 footer {
   width: 100%;
   position: fixed;
@@ -307,13 +398,16 @@ div#house img {
   .scene li#stars.layer img, .scene li#smoke.layer img, .scene li#house.layer img, .scene li#sky.layer img {
     height: auto;
     width: 100%; }
+  .scene li#moon.layer img {
+    width: auto;
+    height: 100%; }
   .scene li#house.layer img, .scene li#sky.layer img {
     width: 105% !important;
     margin-left: -2.3vw; }
 
 li#moon.layer {
   max-height: 12vw;
-  max-width: 115px;
+  width: auto;
   margin-top: 5vw;
   margin-left: 35vw; }
 

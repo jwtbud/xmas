@@ -38,8 +38,8 @@ $(window).load(function() {
 $(".loading").delay(250).fadeOut(1000);
 
 var mySound = new buzz.sound(["sound/snowtracks.mp3", "sound/snowtracks.ogg", "sound/snowtracks.wav"]);
-setTimeout(playsteps,3000)
-setTimeout(stopsteps,7000)
+setTimeout(playsteps,4400)
+setTimeout(stopsteps,9500)
 
 function playsteps() {
 	mySound.play()
@@ -54,9 +54,9 @@ $.fn.snow();
 // $('h2').css({marginTop: -400,opacity:0}).delay(1550).animate({marginTop:30,opacity:1}, 7600,'easeOutElastic
 
 
-$('h2').css({opacity:0}).delay(9150).animate({opacity:1,}, 2000,'easeOutCirc');
-$('h1').css({opacity:0,}).delay(13250).animate({opacity:1,}, 2000,'easeOutCirc');
-$('.flakes').css({opacity:0}).delay(5000).animate({opacity:1}, 8500, 'easeInCirc');
+$('h2').css({opacity:0}).delay(8150).animate({opacity:1,}, 2000,'easeOutSine');
+$('h1').css({opacity:0,}).delay(11750).animate({opacity:1,}, 1300,'easeOutSine');
+$('.flakes').css({opacity:0}).delay(8500).animate({opacity:1}, 8000, 'easeInCirc');
 
 
 });

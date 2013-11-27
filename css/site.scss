@@ -1,4 +1,4 @@
-@import url(reset.css);
+﻿@import url(reset.css);
 
 // BASE
 
@@ -84,17 +84,145 @@
 		overflow-x: hidden;
 	}
 
-	.ie header, .opera header {
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.img/bg2.jpg', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg2.jpg', sizingMethod='scale')";
-		min-height: 600px;
-		background: $bg-full-url
+// IE 
+// Egyszerűsített módhoz itt add hozzá a specifikációt.
+
+	.ie, .opera {
+
+	header {
+		width: 1000px !important;
+		height: 533px !important;
+		min-height: 533px !important;
+		margin: auto !important;
+		background: url(../img/bg-ie.jpg) no-repeat !important;
+		background-size: 100% !important;
 	}
 
+	.scene {
+		overflow: hidden;
+		display: none !important;
+	}
+
+	.loading {
+		height: 533px !important;
+		background: url(../img/preload-ie.jpg) top center no-repeat !important;
+		width: 1000px !important;
+	}
+	.container {
+		width: 1000px !important;
+	}
+
+	h1 {
+		font-size: 30px !important;
+		width: 93% !important;		
+	}
+
+	h2 {
+		font-size: 22px !important;
+		margin-top: 20px !important;
+		width: 93% !important;	
+	}
+
+	footer {
+	position: relative !important;
+	}
+
+	.sound {
+		margin-left: 10% !important
+	}
+
+	.footprint1 {
+		position: absolute;
+		display: block;
+		height: 60px !important;
+		width: 40px !important;
+		bottom: -30px !important;
+		right: 325px !important;
+		background: $footrpint1-img-url no-repeat;
+		background-size: 100%;
+		opacity: 1;
+	}
+	.footprint2 {
+		position: absolute;
+		display: block;
+		height: 100px !important;
+		width: 220px !important;
+		bottom: -25px !important;
+		left: 390px !important;
+		background: $footrpint2-img-url no-repeat;
+		background-size: 100%;
+		opacity: 1;
+	}
+
+	.steps {
+		position: absolute;
+		display: block;
+		height: 200px !important;
+		width: 370px !important;
+		bottom: 110px !important;
+		left: 50px !important;
+		background-size: 100%;
+		opacity: 1;
+	}
+
+	.step1 {
+		height: 30px !important;
+		width: 70px !important;
+		bottom: 10px !important;
+		right: 98px !important;
+	}
+
+	.step2 {
+		height: 40px !important;
+		width: 50px !important;
+		bottom: 0px !important;
+		right: 175px !important;
+	}
+	.step3 {
+		height: 40px !important;
+		width: 80px !important;
+		bottom: 5px !important;
+		left: 100px !important;
+	}
+	.step4 {
+		height: 40px !important;
+		width: 47px !important;
+		top: 100px !important;
+		left: 68px !important;
+	}
+	.step5 {
+		height: 70px !important;
+		width: 40px !important;
+		top: 57px !important;
+		left: 94px !important;
+	}
+	.step6 {
+		height: 30px !important;
+		width: 50px !important;
+		top: 62px !important;
+		left: 130px !important;
+	}
+	.step7 {
+		height: 30px !important;
+		width: 50px !important;
+		top: 70px !important;
+		left: 170px !important;
+	}
+
+	.scarf {
+		height: 100px !important;
+		width: 100px !important;
+		top: 252px !important;
+		left: 265px !important;
+	}	
+
+	}
+
+	// IE VEGE
+
+
+
+	
 	header {
 		background: $bg-url no-repeat top center #221c38;
 		background-size: 100%;
@@ -164,6 +292,7 @@
 		color: #fff;
 		width: 97%;
 		text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+		z-index: 10;
 		// margin-top: 400px;//	
 
 	}
@@ -328,6 +457,13 @@
 	}
 }
 
+@media only all and (min-width: 1500px) and (min-height: 900px) {
+	footer {
+	position: fixed !important;
+	}
+}
+
+
 	footer {
 		width: 100%;
 		position: fixed;
@@ -422,6 +558,12 @@
 			height: auto;
 			width: 100%;
 		}
+
+		li#moon.layer img  {
+			width: auto;
+			height: 100%;
+		}
+
 		//, li#smoke.layer img 
 		li#house.layer img, li#sky.layer img {
 			width: 105% !important;
@@ -431,7 +573,7 @@
 
 		li#moon.layer {
 		max-height: 12vw;
-		max-width: 115px;
+		width: auto;
 		margin-top: 5vw;
 		margin-left: 35vw;
 		}
