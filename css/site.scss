@@ -31,7 +31,7 @@
 
 	.font-normal {
 		font-size: 11px;
-		font-family: 'font-regular';
+		font-family: 'font-regular', arial;
 	}
 
 	.font-bigger {
@@ -87,7 +87,7 @@
 // IE 
 // Egyszerűsített módhoz itt add hozzá a specifikációt.
 
-	.ie, .opera {
+	.ie7, .ie8, .opera {
 
 	header {
 		width: 1000px !important;
@@ -96,6 +96,20 @@
 		margin: auto !important;
 		background: url(../img/bg-ie.jpg) no-repeat !important;
 		background-size: 100% !important;
+	}
+	footer, .sound, footer .container, footer .container a {
+		height: 90px !important;
+	}
+	.sound {
+		width: 90px !important;
+	}
+
+	.sound.play {
+		height: 60px !important;
+		width: 60px !important;
+		background: none !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/sound-on.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/sound-on.png',sizingMethod='scale')" !important;
 	}
 
 	.scene {
@@ -106,6 +120,8 @@
 	.loading {
 		height: 533px !important;
 		background: url(../img/preload-ie.jpg) top center no-repeat !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale')" !important;
 		width: 1000px !important;
 	}
 	.container {
@@ -125,6 +141,13 @@
 
 	footer {
 	position: relative !important;
+	.container {
+		height: 60px !important;
+		min-height: 60px !important;
+		background: #000;
+		width: 1000px !important;
+		display: block !important;
+	}
 	}
 
 	.sound {
@@ -136,22 +159,24 @@
 		display: block;
 		height: 60px !important;
 		width: 40px !important;
-		bottom: -30px !important;
+		bottom: 2px !important;
 		right: 325px !important;
-		background: $footrpint1-img-url no-repeat;
 		background-size: 100%;
 		opacity: 1;
 	}
 	.footprint2 {
 		position: absolute;
 		display: block;
-		height: 100px !important;
+		height: 80px !important;
 		width: 220px !important;
-		bottom: -25px !important;
 		left: 390px !important;
-		background: $footrpint2-img-url no-repeat;
+		bottom: 10px !important;
 		background-size: 100%;
 		opacity: 1;
+	}
+
+	.footprint3 {
+
 	}
 
 	.steps {
@@ -170,6 +195,8 @@
 		width: 70px !important;
 		bottom: 10px !important;
 		right: 98px !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step1.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step1.png',sizingMethod='scale')" !important;
 	}
 
 	.step2 {
@@ -177,36 +204,48 @@
 		width: 50px !important;
 		bottom: 0px !important;
 		right: 175px !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step2.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step2.png',sizingMethod='scale')" !important;
 	}
 	.step3 {
 		height: 40px !important;
 		width: 80px !important;
 		bottom: 5px !important;
 		left: 100px !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step3.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step3.png',sizingMethod='scale')" !important;
 	}
 	.step4 {
 		height: 40px !important;
 		width: 47px !important;
 		top: 100px !important;
 		left: 68px !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step4.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step4.png',sizingMethod='scale')" !important;
 	}
 	.step5 {
 		height: 70px !important;
 		width: 40px !important;
 		top: 57px !important;
 		left: 94px !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step5.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step5.png',sizingMethod='scale')" !important;
 	}
 	.step6 {
 		height: 30px !important;
 		width: 50px !important;
 		top: 62px !important;
 		left: 130px !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step6.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step6.png',sizingMethod='scale')" !important;
 	}
 	.step7 {
 		height: 30px !important;
 		width: 50px !important;
 		top: 70px !important;
 		left: 170px !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step7.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step7.png',sizingMethod='scale')" !important;
 	}
 
 	.scarf {
@@ -214,6 +253,9 @@
 		width: 100px !important;
 		top: 252px !important;
 		left: 265px !important;
+		background: none !important; 
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale') !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale')" !important;
 	}	
 
 	}
@@ -307,13 +349,13 @@
 	h2 {
 		font-size: 2.3vw; 
 		transition: 0.3s;
-		font-family: 'font-light';
+		font-family: 'font-light', arial;
 	}
 	h1 {
 		font-size: 2.8vw;
 		transition: 0.3s;
 		padding-top: 0.9vw;
-		font-family: 'font-regular';
+		font-family: 'font-regular', arial;
 	}
 
 	.scarf {
@@ -450,6 +492,12 @@
 		background: url(../img/steps/step7.png) no-repeat;
 		background-size: 100%;
 	}
+
+@media only all and (max-height: 900px) {
+	header {
+	margin-bottom: 100px !important;
+	}
+}
 
 @media only all and (min-height: 900px) {
 	footer {

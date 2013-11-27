@@ -1,7 +1,7 @@
 @import url(reset.css);
 .font-normal, body {
   font-size: 11px;
-  font-family: 'font-regular'; }
+  font-family: 'font-regular', arial; }
 
 .font-bigger {
   font-size: 15px; }
@@ -10,54 +10,70 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden; }
 
-.ie header, .opera header {
+.ie7 header, .ie8 header, .opera header {
   width: 1000px !important;
   height: 533px !important;
   min-height: 533px !important;
   margin: auto !important;
   background: url(../img/bg-ie.jpg) no-repeat !important;
   background-size: 100% !important; }
-.ie .scene, .opera .scene {
+.ie7 footer, .ie7 .sound, .ie7 footer .container, .ie7 footer .container a, .ie8 footer, .ie8 .sound, .ie8 footer .container, .ie8 footer .container a, .opera footer, .opera .sound, .opera footer .container, .opera footer .container a {
+  height: 90px !important; }
+.ie7 .sound, .ie8 .sound, .opera .sound {
+  width: 90px !important; }
+.ie7 .sound.play, .ie8 .sound.play, .opera .sound.play {
+  height: 60px !important;
+  width: 60px !important;
+  background: none !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/sound-on.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/sound-on.png',sizingMethod='scale')" !important; }
+.ie7 .scene, .ie8 .scene, .opera .scene {
   overflow: hidden;
   display: none !important; }
-.ie .loading, .opera .loading {
+.ie7 .loading, .ie8 .loading, .opera .loading {
   height: 533px !important;
   background: url(../img/preload-ie.jpg) top center no-repeat !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale')" !important;
   width: 1000px !important; }
-.ie .container, .opera .container {
+.ie7 .container, .ie8 .container, .opera .container {
   width: 1000px !important; }
-.ie h1, .opera h1 {
+.ie7 h1, .ie8 h1, .opera h1 {
   font-size: 30px !important;
   width: 93% !important; }
-.ie h2, .opera h2 {
+.ie7 h2, .ie8 h2, .opera h2 {
   font-size: 22px !important;
   margin-top: 20px !important;
   width: 93% !important; }
-.ie footer, .opera footer {
+.ie7 footer, .ie8 footer, .opera footer {
   position: relative !important; }
-.ie .sound, .opera .sound {
+  .ie7 footer .container, .ie8 footer .container, .opera footer .container {
+    height: 60px !important;
+    min-height: 60px !important;
+    background: #000;
+    width: 1000px !important;
+    display: block !important; }
+.ie7 .sound, .ie8 .sound, .opera .sound {
   margin-left: 10% !important; }
-.ie .footprint1, .opera .footprint1 {
+.ie7 .footprint1, .ie8 .footprint1, .opera .footprint1 {
   position: absolute;
   display: block;
   height: 60px !important;
   width: 40px !important;
-  bottom: -30px !important;
+  bottom: 2px !important;
   right: 325px !important;
-  background: url(../img/footprint1.png) no-repeat;
   background-size: 100%;
   opacity: 1; }
-.ie .footprint2, .opera .footprint2 {
+.ie7 .footprint2, .ie8 .footprint2, .opera .footprint2 {
   position: absolute;
   display: block;
-  height: 100px !important;
+  height: 80px !important;
   width: 220px !important;
-  bottom: -25px !important;
   left: 390px !important;
-  background: url(../img/footprint2.png) no-repeat;
+  bottom: 10px !important;
   background-size: 100%;
   opacity: 1; }
-.ie .steps, .opera .steps {
+.ie7 .steps, .ie8 .steps, .opera .steps {
   position: absolute;
   display: block;
   height: 200px !important;
@@ -66,46 +82,63 @@ body {
   left: 50px !important;
   background-size: 100%;
   opacity: 1; }
-.ie .step1, .opera .step1 {
+.ie7 .step1, .ie8 .step1, .opera .step1 {
   height: 30px !important;
   width: 70px !important;
   bottom: 10px !important;
-  right: 98px !important; }
-.ie .step2, .opera .step2 {
+  right: 98px !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step1.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step1.png',sizingMethod='scale')" !important; }
+.ie7 .step2, .ie8 .step2, .opera .step2 {
   height: 40px !important;
   width: 50px !important;
   bottom: 0px !important;
-  right: 175px !important; }
-.ie .step3, .opera .step3 {
+  right: 175px !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step2.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step2.png',sizingMethod='scale')" !important; }
+.ie7 .step3, .ie8 .step3, .opera .step3 {
   height: 40px !important;
   width: 80px !important;
   bottom: 5px !important;
-  left: 100px !important; }
-.ie .step4, .opera .step4 {
+  left: 100px !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step3.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step3.png',sizingMethod='scale')" !important; }
+.ie7 .step4, .ie8 .step4, .opera .step4 {
   height: 40px !important;
   width: 47px !important;
   top: 100px !important;
-  left: 68px !important; }
-.ie .step5, .opera .step5 {
+  left: 68px !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step4.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step4.png',sizingMethod='scale')" !important; }
+.ie7 .step5, .ie8 .step5, .opera .step5 {
   height: 70px !important;
   width: 40px !important;
   top: 57px !important;
-  left: 94px !important; }
-.ie .step6, .opera .step6 {
+  left: 94px !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step5.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step5.png',sizingMethod='scale')" !important; }
+.ie7 .step6, .ie8 .step6, .opera .step6 {
   height: 30px !important;
   width: 50px !important;
   top: 62px !important;
-  left: 130px !important; }
-.ie .step7, .opera .step7 {
+  left: 130px !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step6.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step6.png',sizingMethod='scale')" !important; }
+.ie7 .step7, .ie8 .step7, .opera .step7 {
   height: 30px !important;
   width: 50px !important;
   top: 70px !important;
-  left: 170px !important; }
-.ie .scarf, .opera .scarf {
+  left: 170px !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step7.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/steps/step7.png',sizingMethod='scale')" !important; }
+.ie7 .scarf, .ie8 .scarf, .opera .scarf {
   height: 100px !important;
   width: 100px !important;
   top: 252px !important;
-  left: 265px !important; }
+  left: 265px !important;
+  background: none !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale')" !important; }
 
 header {
   background: url(../img/bg.jpg) no-repeat top center #221c38;
@@ -181,13 +214,13 @@ h1, h2 {
 h2 {
   font-size: 2.3vw;
   transition: 0.3s;
-  font-family: 'font-light'; }
+  font-family: 'font-light', arial; }
 
 h1 {
   font-size: 2.8vw;
   transition: 0.3s;
   padding-top: 0.9vw;
-  font-family: 'font-regular'; }
+  font-family: 'font-regular', arial; }
 
 .scarf {
   position: absolute;
@@ -317,6 +350,9 @@ h1 {
   background: url(../img/steps/step7.png) no-repeat;
   background-size: 100%; }
 
+@media only all and (max-height: 900px) {
+  header {
+    margin-bottom: 100px !important; } }
 @media only all and (min-height: 900px) {
   footer {
     position: relative !important; } }
