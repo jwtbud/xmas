@@ -1,7 +1,7 @@
-$(window).load(function() {
+$(window).ready(function() {
 
 
-window.onload = function(audio) {return !audio.paused;}
+var isPlaying = function(audio) {return !audio.paused;}
 			    var a = document.getElementById('main_audio');
 			    if(!(a.play instanceof Function)){
 			        a = document.getElementById('main_audio_ie8');
@@ -35,15 +35,28 @@ $(document).ready(function(){
 
 // LOADING
 $(window).load(function() {
-$(".loading").delay(750).fadeOut(1000);
+$(".loading").delay(250).fadeOut(1000);
+
+var mySound = new buzz.sound(["sound/snowtracks.mp3", "sound/snowtracks.ogg", "sound/snowtracks.wav"]);
+setTimeout(playsteps,3000)
+setTimeout(stopsteps,7000)
+
+function playsteps() {
+	mySound.play()
+}
+
+function stopsteps() {
+	mySound.stop()
+}
+
 $.fn.snow();
 // $('h1').css({opacity:0, marginTop: 80,}).delay(1650).animate({marginTop: 0, opacity:1}, 3000,'easeOutQiunt');
 // $('h2').css({marginTop: -400,opacity:0}).delay(1550).animate({marginTop:30,opacity:1}, 7600,'easeOutElastic
 
 
-$('h2').css({opacity:0, marginTop: 60}).delay(9150).animate({opacity:1, marginTop: 30}, 2500,' easeInCirc');
-$('h1').css({opacity:0, marginTop: 30,}).delay(13250).animate({opacity:1, marginTop: 10}, 2500,' easeInCirc');
-$('.flakes').css({opacity:0}).delay(11000).animate({opacity:1}, 14500, 'easeInCirc');
+$('h2').css({opacity:0}).delay(9150).animate({opacity:1,}, 2000,'easeOutCirc');
+$('h1').css({opacity:0,}).delay(13250).animate({opacity:1,}, 2000,'easeOutCirc');
+$('.flakes').css({opacity:0}).delay(5000).animate({opacity:1}, 8500, 'easeInCirc');
 
 
 });
@@ -116,6 +129,10 @@ $('#parallax').mousemove(
 
 
 });
+
+
+
+
 
 
 

@@ -141,9 +141,93 @@ h1 {
   width: 30vw;
   bottom: 11vw;
   left: 9.1vw;
-  background: url(../img/footprint3.png) no-repeat;
+  background-size: 100%; }
+
+.steps {
+  position: absolute;
+  display: block;
+  height: 13vw;
+  width: 30vw;
+  bottom: 11vw;
+  left: 9.1vw;
   background-size: 100%;
   opacity: 1; }
+  .steps .stepposition {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 13vw;
+    width: 30vw; }
+
+.step1 {
+  position: absolute;
+  display: block;
+  height: 3vw;
+  width: 8.2vw;
+  bottom: 2vw;
+  right: 0;
+  background: url(../img/steps/step1.png) no-repeat;
+  background-size: 100%; }
+
+.step2 {
+  position: absolute;
+  display: block;
+  height: 3vw;
+  width: 6.3vw;
+  bottom: 1.8vw;
+  right: 9.65vw;
+  background: url(../img/steps/step2.png) no-repeat;
+  background-size: 100%; }
+
+.step3 {
+  position: absolute;
+  display: block;
+  height: 4vw;
+  width: 10.3vw;
+  bottom: 0vw;
+  left: 3.65vw;
+  background: url(../img/steps/step3.png) no-repeat;
+  background-size: 100%; }
+
+.step4 {
+  position: absolute;
+  display: block;
+  height: 4vw;
+  width: 5.3vw;
+  top: 5vw;
+  left: 0vw;
+  background: url(../img/steps/step4.png) no-repeat;
+  background-size: 100%; }
+
+.step5 {
+  position: absolute;
+  display: block;
+  height: 6vw;
+  width: 4.5vw;
+  top: 0vw;
+  left: 3.5vw;
+  background: url(../img/steps/step5.png) no-repeat;
+  background-size: 100%; }
+
+.step6 {
+  position: absolute;
+  display: block;
+  height: 3vw;
+  width: 4.5vw;
+  top: 0vw;
+  left: 8.2vw;
+  background: url(../img/steps/step6.png) no-repeat;
+  background-size: 100%; }
+
+.step7 {
+  position: absolute;
+  display: block;
+  height: 3vw;
+  width: 5vw;
+  top: 1.85vw;
+  left: 13.2vw;
+  background: url(../img/steps/step7.png) no-repeat;
+  background-size: 100%; }
 
 @media only all and (min-height: 900px) {
   footer {
