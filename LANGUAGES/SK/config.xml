@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<audioplay>
+    <config>
+
+	<player playerid="3">
+	    <musicfile>sound/jinglebells.mp3</musicfile>
+	    <repeatTimes>-1</repeatTimes>
+	    <autostart>yes</autostart>
+	    <buttondir>buttons/classic</buttondir>
+	    <mode>playstop</mode>
+	    <listenstop>yes</listenstop>
+	    <fadeindur>1000</fadeindur>
+	    <mastervol>90</mastervol>
+	    <playscriptfile></playscriptfile>  
+            <pausescriptfile></pausescriptfile>
+            <stopscriptfile></stopscriptfile>
+	    <autostartdelay>1000</autostartdelay>
+	    <einterface>no</einterface>
+	    <initbuf>no</initbuf>
+	</player>
+	
+    </config>
+</audioplay>
+

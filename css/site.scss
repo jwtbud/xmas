@@ -6,6 +6,7 @@
 	$bg-url: url(../img/bg.jpg);
 	$bg-full-url: url(../img/bg-full.jpg);
 	$logo-url: url(../img/logo.jpg);
+	$morelogo-url: url(../img/morelogo.jpg);
 	$loading-layer-url: url(../img/preload.jpg);
 	$sound-on-url: url(../img/sound-on.jpg);
 	$sound-off-url: url(../img/sound-off.jpg);
@@ -483,6 +484,12 @@
 		background: url(../img/steps/step7.png) no-repeat;
 		background-size: 100%;
 	}
+// @media only all and (min-width: 1600px) {
+// 	.morelogo {
+// 		margin-top: -20px !important;
+// 		height: 2.4vw !important;
+// 	}
+// }
 
 @media only all and (min-width: 1000px) and (max-width: 14500px) and (max-height: 800px) {
 	body {
@@ -503,7 +510,9 @@
 	.sound {
 		margin-top: -10px !important;
 	}
-
+	.morelogo {
+		margin-top: -12px !important;
+	}
 	li#moon.layer {
 		margin-top: 6.5vw !important;
 		}
@@ -586,6 +595,8 @@
 			display:block;
 			float: right; 
 			margin-top: 10px;
+			cursor: default;
+			pointer-events:  none;
 			}
 		}
 	}
@@ -597,10 +608,24 @@
 		width: 5vw;
 		max-height: 50px; max-width: 50px;
 		display: block;
-		margin-top: 1%;
-		margin-left: 10%;
+		margin-top: 0.8%;
+		margin-left: 3.5%;
 		background-size: 100%;
 		margin-top: 15px;
+	}
+	.morelogo {
+		position: absolute;
+		display: block;
+		background: $morelogo-url no-repeat left top;
+		width: 45vw;
+		max-width: 750px;
+		height: 5.4vw;
+		left: 13vw;
+		background-size: auto 70%;
+		top: 2vw;
+		border: 1px solid transparent;
+		max-height: 50px;
+
 	}
 
 		.play {
