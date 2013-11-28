@@ -14,7 +14,7 @@
 	    <playscriptfile></playscriptfile>  
             <pausescriptfile></pausescriptfile>
             <stopscriptfile></stopscriptfile>
-	    <autostartdelay>2000</autostartdelay>
+	    <autostartdelay>1000</autostartdelay>
 	    <einterface>no</einterface>
 	    <initbuf>no</initbuf>
 	</player>
