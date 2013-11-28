@@ -4,6 +4,8 @@
 		<meta charset="utf-8"/>
 		<title>XMAS</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5">
+		<!-- force latest IE rendering engine & Chrome Frame -->
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->	
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 10]>			
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,6 +16,7 @@
 		<script src="js/modernizr.custom.js"></script>
 		<link rel="stylesheet" media="all" href="css/site.css"/>
 		<script src="js/buzz.min.js"></script>
+		<!--[if IE 9 ]> <script src="js/ie8.js"></script> <![endif]-->
 		<!--[if IE 8 ]> <script src="js/ie8.js"></script> <![endif]-->
 		<script src="js/site.js"></script>
 		<script src="js/jquery.snow.js"></script>
@@ -143,18 +146,6 @@
 				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/sound-on.jpg',sizingMethod='scale')" !important;
 				}
 				</style>
-
-				<bgsound id="bgsound" src="sound/jinglebellss.wav" loop="infinite">
-				<script type="text/javascript" language="JavaScript">
-				function playSound(audioURL) {
-				if (document.all) document.all['bgsound'].src=audioURL;
-				else self.iplayer.location.replace('jsplayer.htm?'+audioURL);
-				}
-				function stopSound() {
-				if (document.all) document.all['bgsound'].src='jsilence.mid';
-				else self.iplayer.location.replace('jsplayer.htm?stop');
-				}
-				</script>
 			 <![endif]-->
 			<div class="steps">
 				<div class="stepposition">
@@ -180,18 +171,22 @@
    			<a id="playpause" class="play" onClick="stopSound()"></a>
 			</div>
 			<div class="container">
-				<a href="#" class="about">&nbsp;</a>
+				<a href="#" class="about"></a>
 			</div>
-		</footer>
+		</footer>                
 		<!--[if IE 8 ]>
 			<div class="footer">
 				<div class="floatleft">
-				<audio id="main_audio" autoplay="autoplay" preload="auto" loop="loop">
-			<source src="sound/jinglebells.mp3" type="audio/mpeg" />
-			<source src="sound/jinglebells.ogg" type="audio/mpeg" />
-			<embed id="main_audio_ie8" hidden="true" autostart="true" loop="true" src="sound/jinglebellss.wav" />
-			</audio>
-   			<span id="playpause" class="play" onClick="stopSound()" style="cursor: pointer; display: block !important; width: 60px !important; height: 60px !important;">&nbsp;</span>
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="60" height="60" id="player3">
+                        <PARAM NAME=movie VALUE="audioplay.swf?playerid=3">
+                        <PARAM NAME=quality VALUE=high>
+                        <PARAM NAME=wmode VALUE="transparent">
+                        <PARAM NAME="allowScriptAccess" value="always" />
+                            <embed wmode="transparent" src="audioplay.swf?playerid=3" quality=high width="60" height="60" name="player3" allowScriptAccess="always"
+                                align="" TYPE="application/x-shockwave-flash"
+                                pluginspage="http://www.macromedia.com/go/getflashplayer">
+                 </embed>
+                </object>
 				</div>
 				<div class="floatright"><img src="img/logo.jpg" style="height: 80px;" alt=""></div>
 			</div>
@@ -201,7 +196,7 @@
 		<script type="text/javascript" src="js/src/TweenMax.min.js"></script>
 		<script type='text/javascript' src='js/src/jquery.gsap.min.js'></script>
 		<script src="js/animation.js"></script>		
-		<!--[if (gt IE 9)|!(IE)]><!--> <script src="js/parallax.js"></script><!--<![endif]-->
+		<!--[if (gt IE 8)|!(IE)]><!--> <script src="js/parallax.js"></script><!--<![endif]-->
 		<script>
 		var scene = document.getElementById('scene');
 		var parallax = new Parallax(scene);
