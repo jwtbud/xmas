@@ -32,7 +32,7 @@ body {
   display: none !important; }
 .ie7 .loading, .ie8 .loading, .opera .loading {
   height: 533px !important;
-  background: url(../img/preload-ie.jpg) top center no-repeat !important;
+  background: url(../img/preload-ie.jpg) top center no-repeat !important #322846;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale') !important;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale')" !important;
   width: 1000px !important; }
@@ -40,7 +40,7 @@ body {
   width: 1000px !important; }
 .ie7 h1, .ie8 h1, .opera h1 {
   font-size: 30px !important;
-  width: 93% !important; }
+  width: 95% !important; }
 .ie7 h2, .ie8 h2, .opera h2 {
   font-size: 22px !important;
   margin-top: 20px !important;
@@ -197,19 +197,13 @@ header {
   top: 0; }
 
 h1, h2 {
-  float: left;
+  margin: auto;
   text-align: right;
   display: block;
   color: #fff;
-  width: 97%;
+  width: 95%;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  z-index: 10; }
-
-.ie h2, .opera h2 {
-  font-size: 18px; }
-
-.ie h1, .opera h1 {
-  font-size: 25px; }
+  z-index: 1000; }
 
 h2 {
   font-size: 2.3vw;
@@ -350,6 +344,24 @@ h1 {
   background: url(../img/steps/step7.png) no-repeat;
   background-size: 100%; }
 
+@media only all and (min-width: 1000px) {
+  .container {
+    min-width: 80% !important; } }
+@media only all and (min-width: 1270px) {
+  .container {
+    min-width: 1050px !important; } }
+@media only all and (min-width: 1370px) {
+  .container {
+    min-width: 1300px !important; } }
+@media only all and (min-width: 1570px) {
+  .container {
+    min-width: 1400px !important; } }
+@media only all and (min-width: 1770px) {
+  .container {
+    min-width: 1600px !important; } }
+@media only all and (min-width: 1870px) {
+  .container {
+    min-width: 1800px !important; } }
 @media only all and (max-height: 900px) {
   header {
     margin-bottom: 100px !important; } }
