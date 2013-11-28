@@ -136,9 +136,7 @@ body {
   width: 100px !important;
   top: 252px !important;
   left: 265px !important;
-  background: none !important;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale') !important;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale')" !important; }
+  background: none !important; }
 
 header {
   background: url(../img/bg.jpg) no-repeat top center #221c38;

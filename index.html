@@ -117,22 +117,23 @@
 				width: 40px !important;
 				bottom: 25px !important;
 				right: 285px !important;
-				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footprint1.png',sizingMethod='scale') !important;
-				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footprint1.png',sizingMethod='scale')" !important;
+				background: url(img/footrprint1-ie.png) no-repeat top center !important;
 				}
 				.footprint2 {
 				height: 100px !important;
-				bottom: 10px !important;
-				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footprint2.png',sizingMethod='scale') !important;
-				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footprint2.png',sizingMethod='scale')" !important;
+				bottom: -20px !important;
+				background: url(img/footrprint2-ie.png) no-repeat top center !important;
 				}
 				.footprint3 {
 				height: 150px !important;
 				width: 300px;
-				bottom: 110px !important;
-				left: 91px !important;
-				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footprint3.png',sizingMethod='scale') !important;
-				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footprint3.png',sizingMethod='scale')" !important;
+				bottom: 105px !important;
+				left: 89px !important;
+				background: url(img/footrprint3-ie.png) no-repeat top center !important;
+				}
+				.footprint1 img, .footprint2 img, .footprint3 img {
+					width: 100% !important;
+					height: auto;
 				}
 				.flake {
 				opacity: 1 !important;
@@ -195,10 +196,10 @@
 				<h1>UPC Direct wishes you <br>a happy holiday season.</h1>
 			</div>
 			<canvas id="testCanvas" width="100%" height="100%"></canvas>
-			<div class="scarf"></div>
-			<div class="footprint1"></div>
-			<div class="footprint2"></div>
-			<div class="footprint3"></div>
+			<div class="scarf"><!--[if IE 8 ]><img src="img/scarf-ie.png" alt=""><![endif]--></div>
+			<div class="footprint1"><!--[if IE 8 ]><img src="img/footprint1-ie.png" alt=""><![endif]--></div>
+			<div class="footprint2"><!--[if IE 8 ]><img src="img/footprint2-ie.png" style="margin-top: 10px" alt=""><![endif]--></div>
+			<div class="footprint3"><!--[if IE 8 ]><img src="img/footprint3-ie.png" alt=""><![endif]--></div>
 			<div class="steps">
 				<div class="stepposition">
 					<div class="step1"></div>

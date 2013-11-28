@@ -163,6 +163,7 @@
 		right: 325px !important;
 		background-size: 100%;
 		opacity: 1;
+
 	}
 	.footprint2 {
 		position: absolute;
@@ -176,7 +177,6 @@
 	}
 
 	.footprint3 {
-
 	}
 
 	.steps {
@@ -254,8 +254,8 @@
 		top: 252px !important;
 		left: 265px !important;
 		background: none !important; 
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale') !important;
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale')" !important;
+		// filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale') !important;
+		// -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/scarf.png',sizingMethod='scale')" !important;
 	}	
 
 	}
