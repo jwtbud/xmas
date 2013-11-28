@@ -33,9 +33,7 @@ body {
 .ie7 .loading, .ie8 .loading, .opera .loading {
   height: 533px !important;
   background: url(../img/preload-ie.jpg) top center no-repeat !important #322846;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale') !important;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/preload-ie.jpg',sizingMethod='scale')" !important;
-  width: 10000px !important; }
+  width: 1000px !important; }
 .ie7 .container, .ie8 .container, .opera .container {
   width: 1000px !important; }
 .ie7 h1, .ie8 h1, .opera h1 {
@@ -342,17 +340,17 @@ h1 {
   background: url(../img/steps/step7.png) no-repeat;
   background-size: 100%; }
 
-@media only all and (min-width: 1100px) and (max-width: 14500px) and (max-height: 800px) {
+@media only all and (min-width: 1000px) and (max-width: 14500px) and (max-height: 800px) {
   body {
     overflow: hidden; }
 
   header {
-    margin-top: -120px !important;
+    margin-top: -110px !important;
     margin: auto;
     margin-bottom: 0px !important; }
 
   h2 {
-    margin-top: 110px; }
+    margin-top: 90px; }
 
   footer {
     bottom: -25px !important; }
@@ -383,10 +381,10 @@ h1 {
 @media only all and (min-width: 1870px) {
   .container {
     min-width: 1800px !important; } }
-@media only all and (max-height: 900px) {
+@media only all and (max-height: 700px) {
   header {
     margin-bottom: 100px !important; } }
-@media only all and (min-height: 900px) {
+@media only all and (min-height: 700px) {
   footer {
     position: relative !important; } }
 @media only all and (min-width: 1500px) and (min-height: 900px) {
