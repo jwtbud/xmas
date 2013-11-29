@@ -390,12 +390,15 @@ h1 {
 @media only all and (min-height: 700px) {
   footer {
     position: relative !important; } }
-@media only all and (min-width: 1500px) and (min-height: 500px)  and (max-height: 950px) {
+@media only all and (min-width: 1500px) and (min-height: 500px) and (max-height: 950px) {
   footer {
-    position: fixed !important;}
-    header {
-      margin-top: -40px;
-      } }
+    position: fixed !important; }
+
+  header {
+    margin-top: -40px; } }
+@media only all and (min-height: 500px) and (max-height: 750px) {
+  .ie9 h2 {
+    margin-top: 89px !important; } }
 footer {
   width: 100%;
   position: fixed;
