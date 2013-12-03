@@ -169,9 +169,10 @@ header {
 
 .loadingspin {
   display: block;
-  width: 72px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   margin: auto;
+  background: url(../img/loading-snow.png);
   margin-top: 22%;
   overflow: hidden;
   text-align: center;

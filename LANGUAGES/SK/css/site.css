@@ -169,8 +169,8 @@ header {
 
 .loadingspin {
   display: block;
-  width: 72px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   margin: auto;
   margin-top: 22%;
   overflow: hidden;
@@ -183,14 +183,16 @@ header {
 .loadingspin span {
   font-size: 80px;
   color: #fff;
-  width: 73px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
+  background: url(../img/loading-snow.png) no-repeat top center;
   overflow: hidden;
   display: block;
   padding-left: 2px;
   margin: auto;
   position: absolute;
   top: 0; }
+
 
 h1, h2 {
   margin: auto;

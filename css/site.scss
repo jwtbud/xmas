@@ -6,6 +6,7 @@
 	$bg-url: url(../img/bg.jpg);
 	$bg-full-url: url(../img/bg-full.jpg);
 	$logo-url: url(../img/logo.jpg);
+	$loading-snow-url: url(../img/loading-snow.png);
 	$morelogo-url: url(../img/morelogo.jpg);
 	$loading-layer-url: url(../img/preload.jpg);
 	$sound-on-url: url(../img/sound-on.jpg);
@@ -300,9 +301,10 @@
 	}
 .loadingspin {
 	display: block;
-	width: 72px;
-	height: 60px;
+	width: 75px;
+	height: 75px;
 	margin: auto;
+	background: $loading-snow-url;
 	margin-top: 22%;
 	overflow: hidden;
 	text-align: center;
